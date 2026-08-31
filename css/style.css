@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #fff8ef;
+  --paper: #ffffff;
+  --text: #2b2730;
+  --sub: #756d78;
+  --line: #eee3db;
+  --accent: #ff8cac;
+  --accent2: #74cfe8;
+  --cream: #ffd9a0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "YuGothic",
+    "Noto Sans JP", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.8;
+}
+
+.hero {
+  min-height: 440px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 64px 24px;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,.85) 0 6%, transparent 7%),
+    radial-gradient(circle at 80% 30%, rgba(255,255,255,.75) 0 5%, transparent 6%),
+    linear-gradient(150deg, #ffd8e4 0%, #fff0d7 48%, #dff6ff 100%);
+}
+
+.hero-inner {
+  max-width: 760px;
+}
+
+.eyebrow {
+  margin: 12px 0 6px;
+  font-size: 12px;
+  letter-spacing: .22em;
+  font-weight: 800;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(38px, 8vw, 76px);
+  line-height: 1;
+  letter-spacing: -.04em;
+}
+
+.lead {
+  margin-top: 22px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.icecream-mark {
+  position: relative;
+  width: 118px;
+  height: 150px;
+  margin: 0 auto 24px;
+}
+
+.scoop {
+  position: absolute;
+  left: 50%;
+  width: 74px;
+  height: 62px;
+  border-radius: 50% 50% 42% 42%;
+  transform: translateX(-50%);
+  box-shadow: inset 0 -5px 0 rgba(0,0,0,.05);
+}
+
+.scoop-1 {
+  top: 0;
+  background: #ff91b1;
+}
+
+.scoop-2 {
+  top: 38px;
+  left: 39%;
+  background: #8edcf1;
+}
+
+.scoop-3 {
+  top: 38px;
+  left: 62%;
+  background: #fff1b2;
+}
+
+.cone {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 34px solid transparent;
+  border-right: 34px solid transparent;
+  border-top: 72px solid #d99a55;
+  transform: translateX(-50%);
+}
+
+main {
+  width: min(900px, calc(100% - 32px));
+  margin: -56px auto 72px;
+  position: relative;
+}
+
+.card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 34px;
+  margin-bottom: 20px;
+  box-shadow: 0 14px 40px rgba(69, 43, 30, .06);
+}
+
+.card h2 {
+  margin: 0 0 20px;
+  font-size: 25px;
+}
+
+.steps {
+  padding-left: 22px;
+}
+
+.steps li {
+  padding: 8px 0 14px 8px;
+}
+
+.steps strong,
+.steps span {
+  display: block;
+}
+
+.steps span {
+  color: var(--sub);
+  margin-top: 3px;
+}
+
+.note {
+  background: #fff4f7;
+  border-radius: 14px;
+  padding: 14px 16px;
+  font-weight: 700;
+}
+
+details {
+  border-top: 1px solid var(--line);
+  padding: 18px 0;
+}
+
+details:last-of-type {
+  border-bottom: 1px solid var(--line);
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+details p {
+  color: var(--sub);
+}
+
+.contact-box {
+  background: #f8f7f4;
+  border-radius: 16px;
+  padding: 18px 20px;
+  margin: 18px 0 8px;
+}
+
+.contact-label {
+  font-size: 11px;
+  letter-spacing: .18em;
+  margin: 0;
+  font-weight: 800;
+  color: var(--sub);
+}
+
+.contact-placeholder {
+  margin: 4px 0 0;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.small {
+  font-size: 12px;
+  color: var(--sub);
+}
+
+.button {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 13px 20px;
+  background: var(--text);
+  color: white;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.sub-header {
+  padding: 64px 24px 92px;
+  text-align: center;
+  background: linear-gradient(150deg, #dff6ff 0%, #fff0d7 52%, #ffd8e4 100%);
+}
+
+.sub-header h1 {
+  font-size: clamp(34px, 7vw, 58px);
+}
+
+.sub-header p:last-child {
+  font-weight: 700;
+}
+
+.policy h2 {
+  margin-top: 34px;
+  font-size: 20px;
+}
+
+.policy h2:first-child {
+  margin-top: 0;
+}
+
+.updated {
+  margin-top: 36px;
+  color: var(--sub);
+  font-size: 13px;
+}
+
+.warning {
+  padding: 12px 14px;
+  background: #fff8dd;
+  border-radius: 12px;
+}
+
+.text-link {
+  display: inline-block;
+  margin-top: 24px;
+  color: var(--text);
+  font-weight: 700;
+}
+
+footer {
+  text-align: center;
+  padding: 12px 24px 42px;
+  color: var(--sub);
+  font-size: 12px;
+}
+
+@media (max-width: 640px) {
+  .hero {
+    min-height: 390px;
+    padding-top: 44px;
+  }
+
+  main {
+    width: min(100% - 20px, 900px);
+  }
+
+  .card {
+    padding: 24px 20px;
+    border-radius: 20px;
+  }
+
+  .card h2 {
+    font-size: 22px;
+  }
+}
