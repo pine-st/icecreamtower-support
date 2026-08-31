@@ -10,7 +10,7 @@ GitHub Pages用のサポートページ一式です。
 
 ## 公開前に変更する箇所
 
-`support@example.com` を実際のサポート用メールアドレスに置き換えてください。
+`pine.st.support@gmail.com` を実際のサポート用メールアドレスに置き換えてください。
 
 ## GitHub Pages
 
